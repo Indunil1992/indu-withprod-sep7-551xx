@@ -1,0 +1,152 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "77edc4bb-1830-4d3d-bf71-91248d2a3a4c": {
+        "id": "77edc4bb-1830-4d3d-bf71-91248d2a3a4c",
+        "parent": null,
+        "name": "indu-withprod-sep7-551.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "indu-withprod-sep7-551.js",
+        "cursor": {
+          "lineNumber": 29,
+          "column": 51
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "induWithprodSep7551"
+        },
+        "triggers": [
+          {
+            "resourceName": "apigindusep7testinduany",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1602074958545,
+        "testCases": {
+          "36d0fd25-d1c2-4a9a-97c8-5e9f20feb9ab": {
+            "id": "36d0fd25-d1c2-4a9a-97c8-5e9f20feb9ab",
+            "name": "Test event",
+            "functionId": "77edc4bb-1830-4d3d-bf71-91248d2a3a4c",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "77edc4bb-1830-4d3d-bf71-91248d2a3a4c"
+    ],
+    "currentFileId": "77edc4bb-1830-4d3d-bf71-91248d2a3a4c",
+    "resources": {
+      "apigindusep7testinduany": {
+        "name": "apigindusep7testinduany",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "indusep7",
+          "apiId": "9ine1jggh2",
+          "endpointType": "EDGE",
+          "rootResourceId": "mcxegfgc78",
+          "existingResources": {
+            "/indunil/qa/tst": "9fyhcf",
+            "/indunil": "kopvgi",
+            "/": "mcxegfgc78",
+            "/indunil/qa": "n1jin9"
+          },
+          "resourceMode": 0,
+          "resourceName": "test/indu",
+          "resourcePath": "/test/indu",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Test99",
+          "mode": 1
+        }
+      },
+      "sqshiruTest": {
+        "name": "sqshiruTest",
+        "type": "SQS",
+        "config": {
+          "mode": 1,
+          "existing": true,
+          "name": "hiru-test",
+          "url": "https://sqs.us-east-1.amazonaws.com/318300609668/hiru-test",
+          "deliveryDelay": "0",
+          "deliveryDelayUnit": "seconds",
+          "queueType": "standardQueue",
+          "defaultVisibilityTimeout": "30",
+          "defaultVisibilityTimeoutUnit": "seconds",
+          "messageRetentionPeriod": "345600",
+          "messageRetentionPeriodUnit": "seconds",
+          "maximumMessageSize": 256,
+          "receiveMessageWaitTime": "0",
+          "queueARN": "arn:aws:sqs:us-east-1:318300609668:hiru-test"
+        }
+      },
+      "s3induuuu": {
+        "name": "s3induuuu",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "name": "induuuu"
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": "CloudFormation",
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.3.1",
+    "projectName": "indu-withprod-sep7-551",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1602075273522
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "indu-withprod-sep7-551xx",
+      "url": "https://github.com/Indunil1992/indu-withprod-sep7-551xx"
+    }
+  }
+}
